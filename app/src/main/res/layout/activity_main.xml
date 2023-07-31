@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgd2image"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <!-- app:layout_constraintVertical_bias="0.282"
+         app:layout_constraintHorizontal_bias="0.0"
+         // dont use vertical bias since the view will go sideways or will not be attached.
+         okavela sanna devices unte andulo ee view turn avudhi.
+         carefull while clearing the constriants-->
+
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="430dp"
+        android:layout_height="78dp"
+        android:hint=" Enter your Name !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="76dp"
+        android:text="Click Me"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+    <!-- edt1 - edit text parent and dani kindana
+         button undi anduke top to bottom lo editText id ni add chesindi-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
